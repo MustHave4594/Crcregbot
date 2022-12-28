@@ -86,66 +86,69 @@ button_ddvz = KeyboardButton('Документы для внесения зап�
 inline_kb_full2 = InlineKeyboardMarkup(row_width=1)
 inline_btn_4 = InlineKeyboardButton('Анкета Эмитента', callback_data='btn4')
 inline_btn_5 = InlineKeyboardButton('Анкета физического лица', callback_data='btn5')
-inline_btn_6 = InlineKeyboardButton('Анкета для юридического лица', callback_data='btn6')
+inline_btn_6 = InlineKeyboardButton('Анкета юридического лица', callback_data='btn6')
 inline_btn_7 = InlineKeyboardButton('Анкета нотариуса', callback_data='btn7')
 inline_btn_8 = InlineKeyboardButton('Анкета Уполномоченного органа', callback_data='btn8')
 inline_btn_9 = InlineKeyboardButton('Анкета доверительного управляющего', callback_data='btn9')
-inline_kb_full2.add(inline_btn_4, inline_btn_5, inline_btn_6, inline_btn_7, inline_btn_8, inline_btn_9)
+inline_btn_10 = InlineKeyboardButton('Анкета залогодержателя (физическое лицо)', callback_data='btn10')
+inline_btn_11 = InlineKeyboardButton('Анкета залогодержателя (юридическое лицо)', callback_data='btn11')
+
+inline_kb_full2.add(inline_btn_4, inline_btn_5, inline_btn_6, inline_btn_7, inline_btn_8, inline_btn_9, inline_btn_10,
+                    inline_btn_11)
 
 inline_kb_full3 = InlineKeyboardMarkup(row_width=1)
-inline_btn_10 = InlineKeyboardButton('Распоряжение о совершении операции', callback_data='btn10')
-inline_btn_11 = InlineKeyboardButton('Залоговое распоряжение', callback_data='btn11')
-inline_btn_12 = InlineKeyboardButton('Распоряжение о внесении изменений о заложенных ЦБ и условиях залога',
-                                     callback_data='btn12')
-inline_btn_13 = InlineKeyboardButton('Распоряжение о передаче прав залога', callback_data='btn13')
-inline_btn_14 = InlineKeyboardButton('Распоряжение о прекращении залога', callback_data='btn14')
-inline_btn_15 = InlineKeyboardButton('Распоряжение на предоставление информации из реестра', callback_data='btn15')
-inline_btn_16 = InlineKeyboardButton('Распоряжение на снятие факта ограничения операций с ЦБ', callback_data='btn16')
-inline_btn_17 = InlineKeyboardButton('Распоряжение владельца о передаче ЦБ на депозитный ЛС', callback_data='btn17')
-inline_kb_full3.add(inline_btn_10, inline_btn_11, inline_btn_12, inline_btn_13, inline_btn_14, inline_btn_15,
-                    inline_btn_16, inline_btn_17)
+inline_btn_12 = InlineKeyboardButton('Распоряжение о совершении операции', callback_data='btn12')
+inline_btn_13 = InlineKeyboardButton('Залоговое распоряжение', callback_data='btn13')
+inline_btn_14 = InlineKeyboardButton('Распоряжение о внесении изменений о заложенных ЦБ и условиях залога',
+                                     callback_data='btn14')
+inline_btn_15 = InlineKeyboardButton('Распоряжение о передаче прав залога', callback_data='btn15')
+inline_btn_16 = InlineKeyboardButton('Распоряжение о прекращении залога', callback_data='btn16')
+inline_btn_17 = InlineKeyboardButton('Распоряжение на предоставление информации из реестра', callback_data='btn17')
+inline_btn_18 = InlineKeyboardButton('Распоряжение на снятие факта ограничения операций с ЦБ', callback_data='btn18')
+inline_btn_19 = InlineKeyboardButton('Распоряжение владельца о передаче ЦБ на депозитный ЛС', callback_data='btn19')
+inline_kb_full3.add(inline_btn_12, inline_btn_13, inline_btn_14, inline_btn_15, inline_btn_16, inline_btn_17,
+                    inline_btn_18, inline_btn_19)
 
 inline_kb_full4 = InlineKeyboardMarkup(row_width=1)
-inline_btn_18 = InlineKeyboardButton('Порядок предоставления документов для открытия ЛС', callback_data='btn18')
-inline_btn_19 = InlineKeyboardButton('Порядок предоставления документов для совершения операции и\n для предоставления \
-информации', callback_data='btn19')
-inline_kb_full4.add(inline_btn_18, inline_btn_19)
+inline_btn_20 = InlineKeyboardButton('Порядок предоставления документов для открытия ЛС', callback_data='btn20')
+inline_btn_21 = InlineKeyboardButton('Порядок предоставления документов для совершения операции и\n для предоставления \
+информации', callback_data='btn21')
+inline_kb_full4.add(inline_btn_20, inline_btn_21)
 
 inline_kb_full5 = InlineKeyboardMarkup(row_width=1)
-inline_btn_20 = InlineKeyboardButton('Документы для физического лица', callback_data='btn20')
-inline_btn_21 = InlineKeyboardButton('Документы для нотариуса', callback_data='btn21')
-inline_btn_22 = InlineKeyboardButton('Документы ЮЛ, являющемуся резидентом РФ', callback_data='btn22')
-inline_btn_23 = InlineKeyboardButton('Документы для Уполномоченного органа', callback_data='btn23')
-inline_btn_24 = InlineKeyboardButton('Документы для ЮЛ-нерезидента', callback_data='btn24')
-inline_btn_25 = InlineKeyboardButton('Документы для открытия казначейского ЛС эмитенту', callback_data='btn25')
-inline_btn_26 = InlineKeyboardButton('Документы для открытия эмиссионного счета', callback_data='btn26')
-inline_kb_full5.add(inline_btn_20, inline_btn_21, inline_btn_22, inline_btn_23, inline_btn_24, inline_btn_25,
-                    inline_btn_26)
-
+inline_btn_22 = InlineKeyboardButton('Документы для физического лица', callback_data='btn22')
+inline_btn_23 = InlineKeyboardButton('Документы для нотариуса', callback_data='btn23')
+inline_btn_24 = InlineKeyboardButton('Документы ЮЛ, являющемуся резидентом РФ', callback_data='btn24')
+inline_btn_25 = InlineKeyboardButton('Документы для Уполномоченного органа', callback_data='btn25')
+inline_btn_26 = InlineKeyboardButton('Документы для ЮЛ-нерезидента', callback_data='btn26')
+inline_btn_27 = InlineKeyboardButton('Документы для открытия казначейского ЛС эмитенту', callback_data='btn27')
+inline_btn_28 = InlineKeyboardButton('Документы для открытия ЛС ОДС', callback_data='btn28')
+inline_kb_full5.add(inline_btn_22, inline_btn_23, inline_btn_24, inline_btn_25,
+                    inline_btn_26, inline_btn_27, inline_btn_28)
 inline_kb_full6 = InlineKeyboardMarkup(row_width=1)
-inline_btn_27 = InlineKeyboardButton('Документы для физического лица', callback_data='btn27')
-inline_btn_28 = InlineKeyboardButton('Документы для юридического лица', callback_data='btn28')
-inline_btn_29 = InlineKeyboardButton('Документы для передачи ЦБ при совершении сделки', callback_data='btn29')
-inline_btn_30 = InlineKeyboardButton('Документы для передачи ЦБ при наследовании', callback_data='btn30')
-inline_btn_31 = InlineKeyboardButton('Документы для исполнения судебных актов', callback_data='btn31')
-inline_btn_32 = InlineKeyboardButton('Документы для передачи ЦБ при реорганизации', callback_data='btn32')
-inline_btn_33 = InlineKeyboardButton('Документы для передачи ЦБ при ликвидации ЮЛ', callback_data='btn33')
-inline_btn_34 = InlineKeyboardButton('Документы для передачи ЦБ при приватизации', callback_data='btn34')
-inline_btn_35 = InlineKeyboardButton('Для внесения записи о прекращении залога и передаче ЦБ в связи с обращением на \
-них взыскания без решения суда', callback_data='btn35')
-inline_btn_36 = InlineKeyboardButton('Для внесения записи о факте фиксации ограничения операций с ЦБ по их полной \
-оплате', callback_data='btn36')
-inline_btn_37 = InlineKeyboardButton('Для внесения записи о фиксации/снятии факта ограничения операций с ЦБ по ЛС ЗЛ',
-                                     callback_data='btn37')
-inline_btn_38 = InlineKeyboardButton('Для внесения записи о зачислении/списании ЦБ со счета НД', callback_data='btn38')
-inline_btn_39 = InlineKeyboardButton('Для зачисления на ЛС НД заложенных ЦБ', callback_data='btn39')
-inline_btn_40 = InlineKeyboardButton('Особенности проведения операций по ЛС ДУ', callback_data='btn40')
-inline_btn_41 = InlineKeyboardButton('Особенности проведения операций по депозитному ЛС', callback_data='btn41')
-inline_btn_42 = InlineKeyboardButton('Объединение ЛС в реестре', callback_data='btn42')
-inline_btn_43 = InlineKeyboardButton('Закрытие ЛС', callback_data='btn43')
-inline_kb_full6.add(inline_btn_27, inline_btn_28, inline_btn_29, inline_btn_30, inline_btn_31, inline_btn_32,
+inline_btn_29 = InlineKeyboardButton('Документы для физического лица', callback_data='btn29')
+inline_btn_30 = InlineKeyboardButton('Документы для юридического лица', callback_data='btn30')
+inline_btn_31 = InlineKeyboardButton('Документы для передачи ЦБ при совершении сделки', callback_data='btn31')
+inline_btn_32 = InlineKeyboardButton('Документы для передачи ЦБ при наследовании', callback_data='btn32')
+inline_btn_33 = InlineKeyboardButton('Документы для исполнения судебных актов', callback_data='btn33')
+inline_btn_34 = InlineKeyboardButton('Документы для передачи ЦБ при реорганизации', callback_data='btn34')
+inline_btn_35 = InlineKeyboardButton('Документы для передачи ЦБ при ликвидации ЮЛ', callback_data='btn35')
+inline_btn_36 = InlineKeyboardButton('Документы для передачи ЦБ при приватизации', callback_data='btn36')
+inline_btn_37 = InlineKeyboardButton('Для внесения записи о фиксации/прекращении права залога (последующего\
+залога) ЦБ', callback_data='btn37')
+inline_btn_38 = InlineKeyboardButton('Для внесения записи о факте фиксации ограничения операций с ЦБ по их полной \
+оплате', callback_data='btn38')
+inline_btn_39 = InlineKeyboardButton('Для внесения записи о фиксации/снятии факта ограничения операций с ЦБ по ЛС ЗЛ',
+                                     callback_data='btn39')
+inline_btn_40 = InlineKeyboardButton('Для внесения записи о зачислении/списании ЦБ со счета НД', callback_data='btn40')
+inline_btn_41 = InlineKeyboardButton('Для зачисления на ЛС НД заложенных ЦБ', callback_data='btn41')
+inline_btn_42 = InlineKeyboardButton('Особенности проведения операций по ЛС ДУ', callback_data='btn42')
+inline_btn_43 = InlineKeyboardButton('Особенности проведения операций по депозитному ЛС', callback_data='btn43')
+inline_btn_44 = InlineKeyboardButton('Объединение ЛС в реестре', callback_data='btn44')
+inline_btn_45 = InlineKeyboardButton('Закрытие ЛС', callback_data='btn45')
+inline_kb_full6.add(inline_btn_29, inline_btn_30, inline_btn_31, inline_btn_32,
                     inline_btn_33, inline_btn_34, inline_btn_35, inline_btn_36, inline_btn_37, inline_btn_38,
-                    inline_btn_39,inline_btn_40,inline_btn_41,inline_btn_42,inline_btn_43)
+                    inline_btn_39,inline_btn_40,inline_btn_41,inline_btn_42,inline_btn_43, inline_btn_44, inline_btn_45)
 
 greet_kb = ReplyKeyboardMarkup(row_width=1)
 greet_kb.add(button_rstr, button_pzip, button_ddpo, button_prscur, button_cont)
@@ -221,8 +224,8 @@ async def vernkr(message: types.Message):
 
 @dp.message_handler(lambda message: message.text == 'Реестры')
 async def allnashirstr(message: types.Message):
-    await message.answer(aostr, reply_markup=greet_kb2)
-
+    await message.answer(aostr)
+    await message.answer("Если хотите передать реестр на обслуживание в Регистратор, то пишите нам на электронную почту почту info@crc-reg.com ", reply_markup=greet_kb2)
 
 @dp.message_handler(lambda message: message.text == 'Контакты')
 async def allnashirstr(message: types.Message):
@@ -242,12 +245,16 @@ async def porzap(message: types.Message):
 
 @dp.message_handler(lambda message: message.text == 'Документы для открытия лицевого счета')
 async def ankets(message: types.Message):
-    await message.answer(message.text, reply_markup=inline_kb_full5)
+    await message.answer(message.text)
+    await message.answer("Если Вы не нашли нужную Вам операцию, то пишите нам на электронную почту info@crc-reg.com",
+                         reply_markup=inline_kb_full5)
 
 
 @dp.message_handler(lambda message: message.text == 'Документы для внесения записи в информацию ЛС о ЗЛ')
 async def ankets(message: types.Message):
-    await message.answer(message.text, reply_markup=inline_kb_full6)
+    await message.answer(message.text)
+    await message.answer("Если Вы не нашли нужную Вам операцию, то пишите нам на электронную почту info@crc-reg.com",
+                         reply_markup=inline_kb_full6)
 
 
 @dp.message_handler(lambda message: message.text == 'Прейскуранты')
@@ -320,30 +327,39 @@ async def ankets(message: types.Message):
             axa = ws.cell(row=rr, column=2).value
             if len(axa) > 4096:
                 for x222 in range(0, len(axa), 4096):
-                    await message.answer(text=axa[x222:x222 + 4096], reply_markup=inline_kb_full2)
+                    await message.answer(text=axa[x222:x222 + 4096])
+                    await message.answer("Если Вы не нашли нужную Вам анкету, то пишите нам на электронную почту info@crc-reg.com",
+                                         reply_markup=inline_kb_full2)
             else:
-                await message.answer(text=axa, reply_markup=inline_kb_full2)
+                await message.answer(text=axa)
+                await message.answer("Если Вы не нашли нужную Вам анкету, то пишите нам на электронную почту info@crc-reg.com",
+                                     reply_markup=inline_kb_full2)
 
-    for rr in range(8, 9):
+
+    for rr in range(10, 11):
         vl = ws.cell(row=rr, column=1).value
         if vl == lookfor:
             axa = ws.cell(row=rr, column=2).value
             if len(axa) > 4096:
                 for x222 in range(0, len(axa), 4096):
-                    await message.answer(text=axa[x222:x222 + 4096], reply_markup=inline_kb_full3)
+                    await message.answer(text=axa[x222:x222 + 4096])
+                    await message.answer("Если Вы не нашли нужное Вам Распоряжение, то пишите нам на электронную почту info@crc-reg.com",
+                                         reply_markup=inline_kb_full3)
             else:
-                await message.answer(text=axa, reply_markup=inline_kb_full3)
+                await message.answer(text=axa)
+                await message.answer("Если Вы не нашли нужное Вам Распоряжение, то пишите нам на электронную почту info@crc-reg.com",
+                                     reply_markup=inline_kb_full3)
 
-    for rr in range(17, 18):
+
+    for rr in range(19, 20):
         vl = ws.cell(row=rr, column=1).value
         if vl == lookfor:
             axa = ws.cell(row=rr, column=2).value
             if len(axa) > 4096:
                 for x222 in range(0, len(axa), 4096):
-                    await message.answer(text=axa[x222:x222 + 4096], reply_markup=inline_kb_full4)
+                    await message.answer(text=axa[x222:x222 + 4096],reply_markup=inline_kb_full4)
             else:
-                await message.answer(text=axa, reply_markup=inline_kb_full4)
-
+                await message.answer(text=axa,reply_markup=inline_kb_full4)
     wb.close()
 
 
@@ -354,7 +370,7 @@ async def price(call: types.CallbackQuery):
     wb = load_workbook(filename='file.xlsx')
     ws = wb.active
 
-    for rr in range(2, 8):
+    for rr in range(2, 10):
         vl = ws.cell(row=rr, column=1).value
         if vl == lookfor:
             axa = ws.cell(row=rr, column=2).value
@@ -365,7 +381,7 @@ async def price(call: types.CallbackQuery):
                 await call.message.answer(text=axa, reply_markup=greet_kb5)
     wb.close()
 
-    for rr in range(9, 17):
+    for rr in range(11, 19):
         vl = ws.cell(row=rr, column=1).value
         if vl == lookfor:
             axa = ws.cell(row=rr, column=2).value
@@ -376,7 +392,7 @@ async def price(call: types.CallbackQuery):
                 await call.message.answer(text=axa, reply_markup=greet_kb6)
     wb.close()
 
-    for rr in range(18, 20):
+    for rr in range(20, 22):
         vl = ws.cell(row=rr, column=1).value
         if vl == lookfor:
             axa = ws.cell(row=rr, column=2).value
@@ -387,7 +403,7 @@ async def price(call: types.CallbackQuery):
                 await call.message.answer(text=axa, reply_markup=greet_kb7)
     wb.close()
 
-    for rr in range(20, 27):
+    for rr in range(22, 29):
         vl = ws.cell(row=rr, column=1).value
         if vl == lookfor:
             axa = ws.cell(row=rr, column=2).value
@@ -398,7 +414,7 @@ async def price(call: types.CallbackQuery):
                 await call.message.answer(text=axa, reply_markup=greet_kb8)
     wb.close()
 
-    for rr in range(27, 44):
+    for rr in range(29, 46):
         vl = ws.cell(row=rr, column=1).value
         if vl == lookfor:
             axa = ws.cell(row=rr, column=2).value
