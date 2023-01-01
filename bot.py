@@ -48,6 +48,7 @@ soupcon = BeautifulSoup(rcon.text, 'html.parser')
 contacts = soupcon.find_all('div', class_='contacts__sub-ttl')
 for contact in contacts:
     contstr = contact.text
+contstr2 = contstr.replace('Телеграм-бот','')
 
 bankreks = soupcon.find_all('div', class_='banks')
 for bank in bankreks:
@@ -229,7 +230,7 @@ async def allnashirstr(message: types.Message):
 
 @dp.message_handler(lambda message: message.text == 'Контакты')
 async def allnashirstr(message: types.Message):
-    await message.answer(contstr + bankstr, reply_markup=greet_kb2)
+    await message.answer(contstr2 + bankstr, reply_markup=greet_kb2)
 
 
 @dp.message_handler(lambda message: message.text == 'Порядок заполнения и предоставления анкет, распоряжений и \
