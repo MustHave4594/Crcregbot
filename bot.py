@@ -87,7 +87,11 @@ inline_kb_full_ru = InlineKeyboardMarkup(row_width=1)
 inline_btn_1_ru = InlineKeyboardButton('Прейскурант услуг Эмитентам', callback_data='btn1_ru')
 inline_btn_2_ru = InlineKeyboardButton('Прейскурант услуг зарегистрированным лицам', callback_data='btn2_ru')
 inline_btn_3_ru = InlineKeyboardButton('Прейскурант доп.услуг зарегистрированным лицам', callback_data='btn3_ru')
-inline_kb_full_ru.add(inline_btn_1_ru, inline_btn_2_ru, inline_btn_3_ru)
+inline_btn_49_ru = InlineKeyboardButton('Прейскурант услуг МКПАО «Алсиб»', callback_data='btn49_ru')
+inline_btn_50_ru = InlineKeyboardButton('Прейскурант услуг зарегистрированным лицам МКПАО «Алсиб»', callback_data='btn50_ru')
+inline_btn_51_ru = InlineKeyboardButton('Прейскурант доп.услуг зарегистрированным лицам МКПАО «Алсиб»', callback_data='btn51_ru')
+inline_kb_full_ru.add(inline_btn_1_ru, inline_btn_2_ru, inline_btn_3_ru, inline_btn_49_ru, inline_btn_50_ru, inline_btn_51_ru)
+
 
 inline_kb_full2_ru = InlineKeyboardMarkup(row_width=1)
 inline_btn_4_ru = InlineKeyboardButton('Анкета Эмитента', callback_data='btn4_ru')
@@ -369,7 +373,7 @@ folder_location_issuers = r''
 response_issuers = requests.get(link_issuers)
 soup_price_issuers_ru = BeautifulSoup(response_issuers.text, "html.parser")
 
-find_href_issuers = soup_price_issuers_ru.select_one("td>a[href$='.pdf']")
+find_href_issuers = soup_price_issuers_ru.select("td>a[href$='.pdf']")[1]
 filename_issuers = os.path.join(folder_location_issuers, find_href_issuers['href'].split('/')[-1])
 with open(filename_issuers, 'wb') as f:
     f.write(requests.get(urljoin(link_issuers, find_href_issuers['href'])).content)
@@ -379,6 +383,18 @@ with open(filename_issuers, 'wb') as f:
 async def price_ru(call: types.CallbackQuery):
     with open(filename_issuers, 'rb') as file:
         await call.message.answer_document(file, caption='Прейскурант услуг, предоставляемых Эмитенту ценных бумаг', reply_markup=greet_kb10_ru)
+        file.close()
+
+
+find_href_issuers_2 = soup_price_issuers_ru.select("td>a[href$='.pdf']")[2]
+filename_issuers_2 = os.path.join(folder_location_issuers, find_href_issuers_2['href'].split('/')[-1])
+with open(filename_issuers_2, 'wb') as f:
+    f.write(requests.get(urljoin(link_issuers, find_href_issuers_2['href'])).content)
+
+@dp.callback_query_handler(text='btn49_ru')
+async def ind_price_ru(call: types.CallbackQuery):
+    with open(filename_issuers, 'rb') as file:
+        await call.message.answer_document(file, caption='Прейскурант услуг, предоставляемых МКПАО «Алсиб»', reply_markup=greet_kb10_ru)
         file.close()
 
 
@@ -412,6 +428,28 @@ async def price_ru(call: types.CallbackQuery):
         await call.message.answer_document(file, caption='Прейскурант дополнительных услуг, предоставляемых зарегистрированному лицу', reply_markup=greet_kb10_ru)
         file.close()
 
+
+find_href_shareholders_3 = soup_shareholders.select("a[href$='.pdf']")[3]
+filename_shareholders_3 = os.path.join(folder_location_shareholders, find_href_shareholders_3['href'].split('/')[-1])
+with open(filename_shareholders_3, 'wb') as f:
+    f.write(requests.get(urljoin(link_shareholders, find_href_shareholders_3['href'])).content)
+
+@dp.callback_query_handler(text='btn50_ru')
+async def ind_price_ru(call: types.CallbackQuery):
+    with open(filename_shareholders_3, 'rb') as file:
+        await call.message.answer_document(file, caption='Прейскурант услуг зарегистрированным лицам МКПАО «Алсиб»', reply_markup=greet_kb10_ru)
+        file.close()
+
+find_href_shareholders_4 = soup_shareholders.select("a[href$='.pdf']")[4]
+filename_shareholders_4 = os.path.join(folder_location_shareholders, find_href_shareholders_4['href'].split('/')[-1])
+with open(filename_shareholders_4, 'wb') as f:
+    f.write(requests.get(urljoin(link_shareholders, find_href_shareholders_4['href'])).content)
+
+@dp.callback_query_handler(text='btn51_ru')
+async def ind_price_ru(call: types.CallbackQuery):
+    with open(filename_shareholders_4, 'rb') as file:
+        await call.message.answer_document(file, caption='Прейскурант доп.услуг зарегистрированным лицам МКПАО «Алсиб»', reply_markup=greet_kb10_ru)
+        file.close()
 
 
 @dp.message_handler(lambda message: message.text == 'English language')
