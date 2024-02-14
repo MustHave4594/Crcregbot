@@ -157,65 +157,65 @@ inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append([InlineK
 inline_kb_full6_ru = InlineKeyboardMarkup(inline_keyboard=inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru)
 
 
-reply_greet_1_ru = []
-reply_greet_1_ru.append(btn_ru)
-reply_greet_1_ru.append(btn_en)
-greet_kb = ReplyKeyboardMarkup(keyboard=[reply_greet_1_ru],resize_keyboard=True)
+greet_kb = ReplyKeyboardBuilder()
+greet_kb.row(btn_ru, width=1)
+greet_kb.row(btn_en, width=1)
 
-reply_greet_2_ru = []
-reply_greet_2_ru.append(btn_list_ru)
-reply_greet_2_ru.append(btn_p_f_s_ru)
-reply_greet_2_ru.append(btn_d_c_t_ru)
-reply_greet_2_ru.append(btn_price_ru)
-reply_greet_2_ru.append(btn_contacts_ru)
-greet_kb_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_2_ru],resize_keyboard=True)
+
+greet_kb_ru = ReplyKeyboardBuilder()
+greet_kb_ru.row(btn_list_ru, width=1)
+greet_kb_ru.row(btn_p_f_s_ru, width=1)
+greet_kb_ru.row(btn_d_c_t_ru, width=1)
+greet_kb_ru.row(btn_price_ru, width=1)
+greet_kb_ru.row(btn_contacts_ru, width=1)
+
 
 reply_greet_3_ru = []
 reply_greet_3_ru.append(btn_main_menu_ru)
 greet_kb2_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_3_ru],resize_keyboard=True)
 
-reply_greet_4_ru = []
-reply_greet_4_ru.append(btn_A_f_ru)
-reply_greet_4_ru.append(btn_orders_ru)
-reply_greet_4_ru.append(btn_p_s_d_ru)
-reply_greet_4_ru.append(btn_main_menu_ru)
-greet_kb3_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_4_ru],resize_keyboard=True)
 
-reply_greet_5_ru = []
-reply_greet_5_ru.append(btn_d_o_a_ru)
-reply_greet_5_ru.append(btn_d_t_p_i_ru)
-reply_greet_5_ru.append(btn_main_menu_ru)
-greet_kb4_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_5_ru],resize_keyboard=True)
+greet_kb3_ru = ReplyKeyboardBuilder()
+greet_kb3_ru.row(btn_A_f_ru, width=1)
+greet_kb3_ru.row(btn_orders_ru, width=1)
+greet_kb3_ru.row(btn_p_s_d_ru, width=1)
+greet_kb3_ru.row(btn_main_menu_ru, width=1)
 
-reply_greet_6_ru = []
-reply_greet_6_ru.append(btn_return_A_f_ru)
-reply_greet_6_ru.append(btn_main_menu_ru)
-greet_kb5_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_6_ru],resize_keyboard=True)
 
-reply_greet_7_ru = []
-reply_greet_7_ru.append(btn_return_orders_ru)
-reply_greet_7_ru.append(btn_main_menu_ru)
-greet_kb6_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_7_ru],resize_keyboard=True)
+greet_kb4_ru = ReplyKeyboardBuilder()
+greet_kb4_ru.row(btn_d_o_a_ru, width=1)
+greet_kb4_ru.row(btn_d_t_p_i_ru, width=1)
+greet_kb4_ru.row(btn_main_menu_ru, width=1)
 
-reply_greet_8_ru = []
-reply_greet_8_ru.append(btn_return_p_s_d_ru)
-reply_greet_8_ru.append(btn_main_menu_ru)
-greet_kb7_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_8_ru],resize_keyboard=True)
 
-reply_greet_9_ru = []
-reply_greet_9_ru.append(btn_return_d_o_a_ru)
-reply_greet_9_ru.append(btn_main_menu_ru)
-greet_kb8_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_9_ru],resize_keyboard=True)
+greet_kb5_ru = ReplyKeyboardBuilder()
+greet_kb5_ru.row(btn_return_A_f_ru, width=1)
+greet_kb5_ru.row(btn_main_menu_ru, width=1)
 
-reply_greet_10_ru = []
-reply_greet_10_ru.append(btn_return_d_t_p_i_ru)
-reply_greet_10_ru.append(btn_main_menu_ru)
-greet_kb9_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_10_ru],resize_keyboard=True)
 
-reply_greet_11_ru = []
-reply_greet_11_ru.append(btn_return_price_ru)
-reply_greet_11_ru.append(btn_main_menu_ru)
-greet_kb10_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_11_ru],resize_keyboard=True)
+greet_kb6_ru = ReplyKeyboardBuilder()
+greet_kb6_ru.row(btn_return_orders_ru, width=1)
+greet_kb6_ru.row(btn_main_menu_ru, width=1)
+
+
+greet_kb7_ru = ReplyKeyboardBuilder()
+greet_kb7_ru.row(btn_return_p_s_d_ru, width=1)
+greet_kb7_ru.row(btn_main_menu_ru, width=1)
+
+
+greet_kb8_ru = ReplyKeyboardBuilder()
+greet_kb8_ru.row(btn_return_d_o_a_ru, width=1)
+greet_kb8_ru.row(btn_main_menu_ru, width=1)
+
+
+greet_kb9_ru = ReplyKeyboardBuilder()
+greet_kb9_ru.row(btn_return_d_t_p_i_ru, width=1)
+greet_kb9_ru.row(btn_main_menu_ru, width=1)
+
+
+greet_kb10_ru = ReplyKeyboardBuilder()
+greet_kb10_ru.row(btn_return_price_ru, width=1)
+greet_kb10_ru.row(btn_main_menu_ru, width=1)
 
 
 btn_return_A_f_en = types.KeyboardButton(text='Go back to the section "Application forms"')
