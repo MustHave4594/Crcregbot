@@ -91,9 +91,9 @@ inline_btn_1_2_3_49_50_51_ru=[]
 inline_btn_1_2_3_49_50_51_ru.append([InlineKeyboardButton(text='Прейскурант услуг Эмитентам', callback_data='btn1_ru')])
 inline_btn_1_2_3_49_50_51_ru.append([InlineKeyboardButton(text='Прейскурант услуг зарегистрированным лицам', callback_data='btn2_ru')])
 inline_btn_1_2_3_49_50_51_ru.append([InlineKeyboardButton(text='Прейскурант доп.услуг зарегистрированным лицам', callback_data='btn3_ru')])
-inline_btn_1_2_3_49_50_51_ru.append([InlineKeyboardButton(text='Прейскурант услуг МКПАО «Алсиб»', callback_data='btn49_ru')])
-inline_btn_1_2_3_49_50_51_ru.append([InlineKeyboardButton(text='Прейскурант услуг зарегистрированным лицам МКПАО «Алсиб»', callback_data='btn50_ru')])
-inline_btn_1_2_3_49_50_51_ru.append([InlineKeyboardButton(text='Прейскурант доп.услуг зарегистрированным лицам МКПАО «Алсиб»', callback_data='btn51_ru')])
+inline_btn_1_2_3_49_50_51_ru.append([InlineKeyboardButton(text='Прейскурант услуг МКПАО «Алсиб»', callback_data='btn53_ru')])
+inline_btn_1_2_3_49_50_51_ru.append([InlineKeyboardButton(text='Прейскурант услуг зарегистрированным лицам МКПАО «Алсиб»', callback_data='btn54_ru')])
+inline_btn_1_2_3_49_50_51_ru.append([InlineKeyboardButton(text='Прейскурант доп.услуг зарегистрированным лицам МКПАО «Алсиб»', callback_data='btn55_ru')])
 inline_kb_full_ru = types.InlineKeyboardMarkup(inline_keyboard=inline_btn_1_2_3_49_50_51_ru)
 
 inline_btn_4_5_6_7_8_9_10_11_12_13_14_15_ru=[]
@@ -157,65 +157,65 @@ inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append([InlineK
 inline_kb_full6_ru = InlineKeyboardMarkup(inline_keyboard=inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru)
 
 
-reply_greet_1_ru = []
-reply_greet_1_ru.append(btn_ru)
-reply_greet_1_ru.append(btn_en)
-greet_kb = ReplyKeyboardMarkup(keyboard=[reply_greet_1_ru],resize_keyboard=True)
+greet_kb = ReplyKeyboardBuilder()
+greet_kb.row(btn_ru, width=1)
+greet_kb.row(btn_en, width=1)
 
-reply_greet_2_ru = []
-reply_greet_2_ru.append(btn_list_ru)
-reply_greet_2_ru.append(btn_p_f_s_ru)
-reply_greet_2_ru.append(btn_d_c_t_ru)
-reply_greet_2_ru.append(btn_price_ru)
-reply_greet_2_ru.append(btn_contacts_ru)
-greet_kb_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_2_ru],resize_keyboard=True)
+
+greet_kb_ru = ReplyKeyboardBuilder()
+greet_kb_ru.row(btn_list_ru, width=1)
+greet_kb_ru.row(btn_p_f_s_ru, width=1)
+greet_kb_ru.row(btn_d_c_t_ru, width=1)
+greet_kb_ru.row(btn_price_ru, width=1)
+greet_kb_ru.row(btn_contacts_ru, width=1)
+
 
 reply_greet_3_ru = []
 reply_greet_3_ru.append(btn_main_menu_ru)
 greet_kb2_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_3_ru],resize_keyboard=True)
 
-reply_greet_4_ru = []
-reply_greet_4_ru.append(btn_A_f_ru)
-reply_greet_4_ru.append(btn_orders_ru)
-reply_greet_4_ru.append(btn_p_s_d_ru)
-reply_greet_4_ru.append(btn_main_menu_ru)
-greet_kb3_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_4_ru],resize_keyboard=True)
 
-reply_greet_5_ru = []
-reply_greet_5_ru.append(btn_d_o_a_ru)
-reply_greet_5_ru.append(btn_d_t_p_i_ru)
-reply_greet_5_ru.append(btn_main_menu_ru)
-greet_kb4_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_5_ru],resize_keyboard=True)
+greet_kb3_ru = ReplyKeyboardBuilder()
+greet_kb3_ru.row(btn_A_f_ru, width=1)
+greet_kb3_ru.row(btn_orders_ru, width=1)
+greet_kb3_ru.row(btn_p_s_d_ru, width=1)
+greet_kb3_ru.row(btn_main_menu_ru, width=1)
 
-reply_greet_6_ru = []
-reply_greet_6_ru.append(btn_return_A_f_ru)
-reply_greet_6_ru.append(btn_main_menu_ru)
-greet_kb5_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_6_ru],resize_keyboard=True)
 
-reply_greet_7_ru = []
-reply_greet_7_ru.append(btn_return_orders_ru)
-reply_greet_7_ru.append(btn_main_menu_ru)
-greet_kb6_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_7_ru],resize_keyboard=True)
+greet_kb4_ru = ReplyKeyboardBuilder()
+greet_kb4_ru.row(btn_d_o_a_ru, width=1)
+greet_kb4_ru.row(btn_d_t_p_i_ru, width=1)
+greet_kb4_ru.row(btn_main_menu_ru, width=1)
 
-reply_greet_8_ru = []
-reply_greet_8_ru.append(btn_return_p_s_d_ru)
-reply_greet_8_ru.append(btn_main_menu_ru)
-greet_kb7_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_8_ru],resize_keyboard=True)
 
-reply_greet_9_ru = []
-reply_greet_9_ru.append(btn_return_d_o_a_ru)
-reply_greet_9_ru.append(btn_main_menu_ru)
-greet_kb8_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_9_ru],resize_keyboard=True)
+greet_kb5_ru = ReplyKeyboardBuilder()
+greet_kb5_ru.row(btn_return_A_f_ru, width=1)
+greet_kb5_ru.row(btn_main_menu_ru, width=1)
 
-reply_greet_10_ru = []
-reply_greet_10_ru.append(btn_return_d_t_p_i_ru)
-reply_greet_10_ru.append(btn_main_menu_ru)
-greet_kb9_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_10_ru],resize_keyboard=True)
 
-reply_greet_11_ru = []
-reply_greet_11_ru.append(btn_return_price_ru)
-reply_greet_11_ru.append(btn_main_menu_ru)
-greet_kb10_ru = ReplyKeyboardMarkup(keyboard=[reply_greet_11_ru],resize_keyboard=True)
+greet_kb6_ru = ReplyKeyboardBuilder()
+greet_kb6_ru.row(btn_return_orders_ru, width=1)
+greet_kb6_ru.row(btn_main_menu_ru, width=1)
+
+
+greet_kb7_ru = ReplyKeyboardBuilder()
+greet_kb7_ru.row(btn_return_p_s_d_ru, width=1)
+greet_kb7_ru.row(btn_main_menu_ru, width=1)
+
+
+greet_kb8_ru = ReplyKeyboardBuilder()
+greet_kb8_ru.row(btn_return_d_o_a_ru, width=1)
+greet_kb8_ru.row(btn_main_menu_ru, width=1)
+
+
+greet_kb9_ru = ReplyKeyboardBuilder()
+greet_kb9_ru.row(btn_return_d_t_p_i_ru, width=1)
+greet_kb9_ru.row(btn_main_menu_ru, width=1)
+
+
+greet_kb10_ru = ReplyKeyboardBuilder()
+greet_kb10_ru.row(btn_return_price_ru, width=1)
+greet_kb10_ru.row(btn_main_menu_ru, width=1)
 
 
 btn_return_A_f_en = types.KeyboardButton(text='Go back to the section "Application forms"')
@@ -292,65 +292,56 @@ inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append([InlineK
 inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append([InlineKeyboardButton(text='Closure of a personal account', callback_data='btn42_en')])
 inline_kb_full_5_en = InlineKeyboardMarkup(inline_keyboard=inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en)
 
-reply_greet_1_en = []
-reply_greet_1_en.append(btn_p_f_s_en)
-reply_greet_1_en.append(btn_d_c_t_en)
-reply_greet_1_en.append(btn_contacts_en)
-greet_kb_en = ReplyKeyboardMarkup(keyboard=[reply_greet_1_en],resize_keyboard=True)
+greet_kb_en = ReplyKeyboardBuilder()
+greet_kb_en.row(btn_p_f_s_en, width = 1)
+greet_kb_en.row(btn_d_c_t_en, width = 1)
+greet_kb_en.row(btn_contacts_en, width = 1)
 
-reply_greet_2_en = []
-reply_greet_2_en.append(btn_main_menu_en)
-greet_kb_2_en = ReplyKeyboardMarkup(keyboard=[reply_greet_2_en],resize_keyboard=True)
+greet_kb_2_en = ReplyKeyboardBuilder()
+greet_kb_2_en.row(btn_main_menu_en, width = 1)
 
-reply_greet_3_en = []
-reply_greet_3_en.append(btn_A_f_en)
-reply_greet_3_en.append(btn_orders_en)
-reply_greet_3_en.append(btn_p_s_d_en)
-reply_greet_3_en.append(btn_main_menu_en)
-greet_kb_3_en = ReplyKeyboardMarkup(keyboard=[reply_greet_3_en],resize_keyboard=True)
+greet_kb_3_en = ReplyKeyboardBuilder()
+greet_kb_3_en.row(btn_A_f_en, width = 1)
+greet_kb_3_en.row(btn_orders_en, width = 1)
+greet_kb_3_en.row(btn_p_s_d_en, width = 1)
+greet_kb_3_en.row(btn_main_menu_en, width = 1)
 
-reply_greet_4_en = []
-reply_greet_4_en.append(btn_d_o_a_en)
-reply_greet_4_en.append(btn_d_t_p_i_en)
-reply_greet_4_en.append(btn_main_menu_en)
-greet_kb_4_en = ReplyKeyboardMarkup(keyboard=[reply_greet_4_en],resize_keyboard=True)
+greet_kb_4_en = ReplyKeyboardBuilder()
+greet_kb_4_en.row(btn_d_o_a_en, width = 1)
+greet_kb_4_en.row(btn_d_t_p_i_en, width = 1)
+greet_kb_4_en.row(btn_main_menu_en, width = 1)
 
-reply_greet_5_en = []
-reply_greet_5_en.append(btn_return_A_f_en)
-reply_greet_5_en.append(btn_main_menu_en)
-greet_kb_5_en = ReplyKeyboardMarkup(keyboard=[reply_greet_5_en],resize_keyboard=True)
+greet_kb_5_en = ReplyKeyboardBuilder()
+greet_kb_5_en.row(btn_return_A_f_en, width = 1)
+greet_kb_5_en.row(btn_main_menu_en, width = 1)
 
-reply_greet_6_en = []
-reply_greet_6_en.append(btn_return_orders_en)
-reply_greet_6_en.append(btn_main_menu_en)
-greet_kb_6_en = ReplyKeyboardMarkup(keyboard=[reply_greet_6_en], resize_keyboard=True)
+greet_kb_6_en = ReplyKeyboardBuilder()
+greet_kb_6_en.row(btn_return_orders_en, width = 1)
+greet_kb_6_en.row(btn_main_menu_en, width = 1)
 
-reply_greet_7_en = []
-reply_greet_7_en.append(btn_return_p_s_d_en)
-reply_greet_7_en.append(btn_main_menu_en)
-greet_kb_7_en = ReplyKeyboardMarkup(keyboard=[reply_greet_7_en],resize_keyboard=True)
+greet_kb_7_en = ReplyKeyboardBuilder()
+greet_kb_7_en.row(btn_return_p_s_d_en, width = 1)
+greet_kb_7_en.row(btn_main_menu_en, width = 1)
 
-reply_greet_8_en = []
-reply_greet_8_en.append(btn_return_d_o_a_en)
-reply_greet_8_en.append(btn_main_menu_en)
-greet_kb_8_en = ReplyKeyboardMarkup(keyboard=[reply_greet_8_en],resize_keyboard=True)
+greet_kb_8_en = ReplyKeyboardBuilder()
+greet_kb_8_en.row(btn_return_d_o_a_en, width = 1)
+greet_kb_8_en.row(btn_main_menu_en, width = 1)
 
-reply_greet_9_en = []
-reply_greet_9_en.append(btn_return_d_t_p_i_en)
-reply_greet_9_en.append(btn_main_menu_en)
-greet_kb_9_en = ReplyKeyboardMarkup(keyboard=[reply_greet_8_en],resize_keyboard=True)
+greet_kb_9_en = ReplyKeyboardBuilder()
+greet_kb_9_en.row(btn_return_d_t_p_i_en, width = 1)
+greet_kb_9_en.row(btn_main_menu_en, width = 1)
 
 @dp.message(Command('start'))
 async def send_welcome(message: types.Message):
-    await message.answer('Выберите язык / Select a language', reply_markup=greet_kb)
+    await message.answer('Выберите язык / Select a language', reply_markup=greet_kb.as_markup(resize_keyboard = True))
 
 @dp.message(lambda message: message.text == 'Русский язык')
 async def ru_language(message: types.Message):
-    await message.answer('Выбран русский язык.\n Выбери нужную кнопку в меню', reply_markup=greet_kb_ru)
+    await message.answer('Выбран русский язык.\n Выбери нужную кнопку в меню', reply_markup=greet_kb_ru.as_markup(resize_keyboard = True))
 
 @dp.message(lambda message: message.text == 'В главное меню')
 async def main_menu_ru (message: types.Message):
-    await message.answer('Выберите нужную кнопку в меню', reply_markup=greet_kb_ru)
+    await message.answer('Выберите нужную кнопку в меню', reply_markup=greet_kb_ru.as_markup(resize_keyboard = True))
 
 @dp.message(lambda message: message.text == 'Вернуться к разделу "Анкеты"')
 async def back_a_f_ru (message: types.Message):
@@ -393,12 +384,12 @@ async def contacts_ru(message: types.Message):
 
 @dp.message(lambda message: message.text == 'Порядок заполнения и предоставления анкет, распоряжений и запросов')
 async def p_f_s_ru (message: types.Message):
-    await message.answer("Выберите документ, который Вас интересует", reply_markup=greet_kb3_ru)
+    await message.answer("Выберите документ, который Вас интересует", reply_markup=greet_kb3_ru.as_markup(resize_keyboard = True))
 
 
 @dp.message(lambda message: message.text == 'Документы для проведения операций')
 async def d_c_t_ru (message: types.Message):
-    await message.answer("Выберите операцию, которая Вас интересует", reply_markup=greet_kb4_ru)
+    await message.answer("Выберите операцию, которая Вас интересует", reply_markup=greet_kb4_ru.as_markup(resize_keyboard = True))
 
 
 @dp.message(lambda message: message.text == 'Документы для открытия лицевого счета')
@@ -424,30 +415,28 @@ response_issuers = requests.get(link_issuers)
 soup_price_issuers_ru = BeautifulSoup(response_issuers.text, "html.parser")
 
 
-@dp.callback_query(F.data == 'btn1_ru')
+@dp.callback_query(F.data=='btn1_ru')
 async def price_ru(call: types.CallbackQuery):
-    find_href_issuers = soup_price_issuers_ru.select("td>a[href$='.pdf']")[0]
-    filename_issuers = os.path.join(folder_location_issuers, find_href_issuers['href'].split('/')[-1])
-    with open(filename_issuers, 'wb') as f:
-        f.write(requests.get(urljoin(link_issuers, find_href_issuers['href'])).content)
-    with open(filename_issuers, 'rb') as file1:
-        doc1 = BufferedInputFile(file1.read(), filename="Прейскурант Эмитенты доп услуги_ООО_КРК_с_06.07.21.pdf")
-        await call.message.answer_document(doc1, caption='Прейскурант услуг, предоставляемых Эмитенту ценных бумаг',
-                                           reply_markup=greet_kb10_ru.as_markup(resize_keyboard=True))
-    file1.close()
+  find_href_issuers = soup_price_issuers_ru.select("td>a[href$='.pdf']")[0]
+  filename_issuers = os.path.join(folder_location_issuers, find_href_issuers['href'].split('/')[-1])
+  with open(filename_issuers, 'wb') as f:
+    f.write(requests.get(urljoin(link_issuers, find_href_issuers['href'])).content)
+  with open(filename_issuers, 'rb') as file1:
+    doc1 = BufferedInputFile(file1.read(),filename="Прейскурант Эмитенты доп услуги_ООО_КРК_с_06.07.21.pdf")
+    await call.message.answer_document(doc1, caption='Прейскурант услуг, предоставляемых Эмитенту ценных бумаг', reply_markup=greet_kb10_ru.as_markup(resize_keyboard = True))
+  file1.close()
+      
 
-
-@dp.callback_query(F.data == 'btn53_ru')
+@dp.callback_query(F.data=='btn53_ru')
 async def ind_price_ru(call: types.CallbackQuery):
-    find_href_issuers_2 = soup_price_issuers_ru.select("td>a[href$='.pdf']")[1]
-    filename_issuers_2 = os.path.join(folder_location_issuers, find_href_issuers_2['href'].split('/')[-1])
-    with open(filename_issuers_2, 'wb') as f:
-        f.write(requests.get(urljoin(link_issuers, find_href_issuers_2['href'])).content)
-    with open(filename_issuers_2, 'rb') as file2:
-        doc2 = BufferedInputFile(file2.read(), filename="Индивидуальный Прейскурант Эмитент доп услуги_Алсиб.pdf")
-        await call.message.answer_document(doc2, caption='Прейскурант услуг, предоставляемых МКПАО «Алсиб»',
-                                           reply_markup=greet_kb10_ru.as_markup(resize_keyboard=True))
-    file2.close()
+  find_href_issuers_2 = soup_price_issuers_ru.select("td>a[href$='.pdf']")[1]
+  filename_issuers_2 = os.path.join(folder_location_issuers, find_href_issuers_2['href'].split('/')[-1])
+  with open(filename_issuers_2, 'wb') as f:
+    f.write(requests.get(urljoin(link_issuers, find_href_issuers_2['href'])).content)
+  with open(filename_issuers_2, 'rb') as file2:
+    doc2 = BufferedInputFile(file2.read(),filename="Индивидуальный Прейскурант Эмитент доп услуги_Алсиб.pdf")
+    await call.message.answer_document(doc2, caption='Прейскурант услуг, предоставляемых МКПАО «Алсиб»', reply_markup=greet_kb10_ru.as_markup(resize_keyboard = True))
+  file2.close()
 
 
 link_shareholders = 'https://crc-reg.com/for-shareholders/price-lists/'
@@ -456,70 +445,63 @@ response_shareholders = requests.get(link_shareholders)
 soup_shareholders = BeautifulSoup(response_shareholders.text, "html.parser")
 
 
-@dp.callback_query(F.data == 'btn2_ru')
+@dp.callback_query(F.data=='btn2_ru')
 async def price_ru(call: types.CallbackQuery):
-    find_href_shareholders = soup_shareholders.select("a[href$='.pdf']")[1]
-    filename_shareholders = os.path.join(folder_location_shareholders, find_href_shareholders['href'].split('/')[-1])
-    with open(filename_shareholders, 'wb') as f:
-        f.write(requests.get(urljoin(link_shareholders, find_href_shareholders['href'])).content)
-    with open(filename_shareholders, 'rb') as file3:
-        doc3 = BufferedInputFile(file3.read(), filename="Прейскурант Зарег. лица_ООО_КРК_с_06.07.21.pdf")
-        await call.message.answer_document(doc3, caption='Прейскурант услуг, предоставляемых зарегистрированному лицу',
-                                           reply_markup=greet_kb10_ru.as_markup(resize_keyboard=True))
-    file3.close()
+  find_href_shareholders = soup_shareholders.select("a[href$='.pdf']")[1]
+  filename_shareholders = os.path.join(folder_location_shareholders, find_href_shareholders ['href'].split('/')[-1])
+  with open(filename_shareholders, 'wb') as f:
+    f.write(requests.get(urljoin(link_shareholders, find_href_shareholders['href'])).content)
+  with open(filename_shareholders, 'rb') as file3:
+    doc3 = BufferedInputFile(file3.read(),filename="Прейскурант Зарег. лица_ООО_КРК_с_06.07.21.pdf")
+    await call.message.answer_document(doc3, caption='Прейскурант услуг, предоставляемых зарегистрированному лицу', reply_markup=greet_kb10_ru.as_markup(resize_keyboard = True))
+  file3.close()
 
 
-@dp.callback_query(F.data == 'btn3_ru')
+@dp.callback_query(F.data=='btn3_ru')
 async def price_ru(call: types.CallbackQuery):
-    find_href_shareholders_2 = soup_shareholders.select("a[href$='.pdf']")[2]
-    filename_shareholders_2 = os.path.join(folder_location_shareholders,
-                                           find_href_shareholders_2['href'].split('/')[-1])
-    with open(filename_shareholders_2, 'wb') as f:
-        f.write(requests.get(urljoin(link_shareholders, find_href_shareholders_2['href'])).content)
-    with open(filename_shareholders_2, 'rb') as file4:
-        doc4 = BufferedInputFile(file4.read(), filename="Прейскурант Зарег. лица (доп. услуги)_ООО_КРК_с_06.07.21.pdf")
-        await call.message.answer_document(doc4,
-                                           caption='Прейскурант дополнительных услуг, предоставляемых зарегистрированному лицу',
-                                           reply_markup=greet_kb10_ru.as_markup(resize_keyboard=True))
-    file4.close()
+  find_href_shareholders_2 = soup_shareholders.select("a[href$='.pdf']")[2]
+  filename_shareholders_2 = os.path.join(folder_location_shareholders, find_href_shareholders_2['href'].split('/')[-1])
+  with open(filename_shareholders_2, 'wb') as f:
+    f.write(requests.get(urljoin(link_shareholders, find_href_shareholders_2['href'])).content)
+  with open(filename_shareholders_2, 'rb') as file4:
+    doc4 = BufferedInputFile(file4.read(),filename="Прейскурант Зарег. лица (доп. услуги)_ООО_КРК_с_06.07.21.pdf")
+    await call.message.answer_document(doc4, caption='Прейскурант дополнительных услуг, предоставляемых зарегистрированному лицу', reply_markup=greet_kb10_ru.as_markup(resize_keyboard = True))
+  file4.close()
 
 
-@dp.callback_query(F.data == 'btn54_ru')
+@dp.callback_query(F.data=='btn54_ru')
 async def ind_price_ru(call: types.CallbackQuery):
-    find_href_shareholders_3 = soup_shareholders.select("a[href$='.pdf']")[3]
-    filename_shareholders_3 = os.path.join(folder_location_shareholders,
-                                           find_href_shareholders_3['href'].split('/')[-1])
-    with open(filename_shareholders_3, 'wb') as f:
-        f.write(requests.get(urljoin(link_shareholders, find_href_shareholders_3['href'])).content)
-    with open(filename_shareholders_3, 'rb') as file5:
-        doc5 = BufferedInputFile(file5.read(), filename="Индивидуальный Прейскурант Зарег. лица_Алсиб.pdf")
-        await call.message.answer_document(doc5, caption='Прейскурант услуг зарегистрированным лицам МКПАО «Алсиб»',
-                                           reply_markup=greet_kb10_ru.as_markup(resize_keyboard=True))
-    file5.close()
+  find_href_shareholders_3 = soup_shareholders.select("a[href$='.pdf']")[3]
+  filename_shareholders_3 = os.path.join(folder_location_shareholders, find_href_shareholders_3['href'].split('/')[-1])
+  with open(filename_shareholders_3, 'wb') as f:
+    f.write(requests.get(urljoin(link_shareholders, find_href_shareholders_3['href'])).content)
+  with open(filename_shareholders_3, 'rb') as file5:
+    doc5 = BufferedInputFile(file5.read(),filename="Индивидуальный Прейскурант Зарег. лица_Алсиб.pdf")
+    await call.message.answer_document(doc5, caption='Прейскурант услуг зарегистрированным лицам МКПАО «Алсиб»', reply_markup=greet_kb10_ru.as_markup(resize_keyboard = True))
+  file5.close()
 
 
-@dp.callback_query(F.data == 'btn55_ru')
+@dp.callback_query(F.data=='btn55_ru')
 async def ind_price_ru(call: types.CallbackQuery):
-    find_href_shareholders_4 = soup_shareholders.select("a[href$='.pdf']")[4]
-    filename_shareholders_4 = os.path.join(folder_location_shareholders,
-                                           find_href_shareholders_4['href'].split('/')[-1])
-    with open(filename_shareholders_4, 'wb') as f:
-        f.write(requests.get(urljoin(link_shareholders, find_href_shareholders_4['href'])).content)
-    with open(filename_shareholders_4, 'rb') as file6:
-        doc6 = BufferedInputFile(file6.read(), filename="Индивидуальный Прейскурант Эмитент доп услуги_Алсиб.pdf")
-        await call.message.answer_document(doc6, caption='Прейскурант доп.услуг зарегистрированным лицам МКПАО «Алсиб»',
-                                           reply_markup=greet_kb10_ru.as_markup(resize_keyboard=True))
-    file6.close()
+  find_href_shareholders_4 = soup_shareholders.select("a[href$='.pdf']")[4]
+  filename_shareholders_4 = os.path.join(folder_location_shareholders, find_href_shareholders_4['href'].split('/')[-1])
+  with open(filename_shareholders_4, 'wb') as f:
+    f.write(requests.get(urljoin(link_shareholders, find_href_shareholders_4['href'])).content)
+  with open(filename_shareholders_4, 'rb') as file6:
+    doc6 = BufferedInputFile(file6.read(),filename="Индивидуальный Прейскурант Эмитент доп услуги_Алсиб.pdf")
+    await call.message.answer_document(doc6, caption='Прейскурант доп.услуг зарегистрированным лицам МКПАО «Алсиб»', reply_markup=greet_kb10_ru.as_markup(resize_keyboard = True))
+  file6.close()
+
 
 
 @dp.message(lambda message: message.text == 'English language')
 async def en_language(message: types.Message):
-    await message.answer('English is selected.\n Select the desired button in the menu', reply_markup=greet_kb_en)
+    await message.answer('English is selected.\n Select the desired button in the menu', reply_markup=greet_kb_en.as_markup(resize_keyboard = True))
 
 
 @dp.message(lambda message: message.text == 'To the main menu')
 async def main_menu_en(message: types.Message):
-    await message.answer('Select the desired button in the menu', reply_markup = greet_kb_en)
+    await message.answer('Select the desired button in the menu', reply_markup = greet_kb_en.as_markup(resize_keyboard = True))
 
 @dp.message(lambda message: message.text == 'Go back to the section "Application forms"')
 async def back_a_f_en(message: types.Message):
@@ -543,19 +525,19 @@ async def back_p_s_t_p_en(message: types.Message):
 
 @dp.message(lambda message: message.text == 'Contacts')
 async def contacts_en(message: types.Message):
-    await message.answer(contact_str_en_replace, reply_markup=greet_kb_2_en)
+    await message.answer(contact_str_en_replace, reply_markup=greet_kb_2_en.as_markup(resize_keyboard = True))
 
 @dp.message(lambda message: message.text == 'Go back to the section "To the main menu"')
 async def back_p_s_t_p_en(message: types.Message):
-    await message.answer(message.text, reply_markup=greet_kb_en)
+    await message.answer(message.text, reply_markup=greet_kb_en.as_markup(resize_keyboard = True))
 
 @dp.message(lambda message: message.text == 'Procedure for filling out and submitting Application forms, Orders and Requests')
 async def p_f_s_en(message: types.Message):
-    await message.answer('Select the document you are interested in', reply_markup = greet_kb_3_en)
+    await message.answer('Select the document you are interested in', reply_markup = greet_kb_3_en.as_markup(resize_keyboard = True))
 
 @dp.message(lambda message: message.text == 'Documents for conducting transactions')
 async def d_c_t_en(message: types.Message):
-    await message.answer('Select the operation that interests you', reply_markup = greet_kb_4_en)
+    await message.answer('Select the operation that interests you', reply_markup = greet_kb_4_en.as_markup(resize_keyboard = True))
 
 @dp.message(lambda message: message.text == 'Procedure for submitting documents to open a personal account')
 async def p_p_a_en(message: types.Message):
@@ -677,9 +659,9 @@ async def from_file(call: types.CallbackQuery):
             value_ru = ws.cell(row=cell_ru, column=2).value
             if len(value_ru) > 4096:
                 for len_ru in range(0, len(value_ru), 4096):
-                    await call.message.answer(text=value_ru[len_ru:len_ru + 4096], reply_markup=greet_kb5_ru)
+                    await call.message.answer(text=value_ru[len_ru:len_ru + 4096], reply_markup=greet_kb5_ru.as_markup(resize_keyboard = True))
             else:
-                await call.message.answer(text=value_ru, reply_markup=greet_kb5_ru)
+                await call.message.answer(text=value_ru, reply_markup=greet_kb5_ru.as_markup(resize_keyboard = True))
     wb.close()
 
 
@@ -689,9 +671,9 @@ async def from_file(call: types.CallbackQuery):
             value_ru = ws.cell(row=cell_ru, column=2).value
             if len(value_ru) > 4096:
                 for len_ru in range(0, len(value_ru), 4096):
-                    await call.message.answer(text=value_ru[len_ru:len_ru + 4096], reply_markup=greet_kb6_ru)
+                    await call.message.answer(text=value_ru[len_ru:len_ru + 4096], reply_markup=greet_kb6_ru.as_markup(resize_keyboard = True))
             else:
-                await call.message.answer(text=value_ru, reply_markup=greet_kb6_ru)
+                await call.message.answer(text=value_ru, reply_markup=greet_kb6_ru.as_markup(resize_keyboard = True))
     wb.close()
 
 
@@ -701,9 +683,9 @@ async def from_file(call: types.CallbackQuery):
             value_ru = ws.cell(row=cell_ru, column=2).value
             if len(value_ru) > 4096:
                 for len_ru in range(0, len(value_ru), 4096):
-                    await call.message.answer(text=value_ru[len_ru:len_ru + 4096], reply_markup=greet_kb7_ru)
+                    await call.message.answer(text=value_ru[len_ru:len_ru + 4096], reply_markup=greet_kb7_ru.as_markup(resize_keyboard = True))
             else:
-                await call.message.answer(text=value_ru, reply_markup=greet_kb7_ru)
+                await call.message.answer(text=value_ru, reply_markup=greet_kb7_ru.as_markup(resize_keyboard = True))
     wb.close()
 
 
@@ -713,9 +695,9 @@ async def from_file(call: types.CallbackQuery):
             value_ru = ws.cell(row=cell_ru, column=2).value
             if len(value_ru) > 4096:
                 for len_ru in range(0, len(value_ru), 4096):
-                    await call.message.answer(text=value_ru[len_ru:len_ru + 4096], reply_markup=greet_kb8_ru)
+                    await call.message.answer(text=value_ru[len_ru:len_ru + 4096], reply_markup=greet_kb8_ru.as_markup(resize_keyboard = True))
             else:
-                await call.message.answer(text=value_ru, reply_markup=greet_kb8_ru)
+                await call.message.answer(text=value_ru, reply_markup=greet_kb8_ru.as_markup(resize_keyboard = True))
     wb.close()
 
 
@@ -725,9 +707,9 @@ async def from_file(call: types.CallbackQuery):
             value_ru = ws.cell(row=cell_ru, column=2).value
             if len(value_ru) > 4096:
                 for len_ru in range(0, len(value_ru), 4096):
-                    await call.message.answer(text=value_ru[len_ru:len_ru + 4096], reply_markup=greet_kb9_ru)
+                    await call.message.answer(text=value_ru[len_ru:len_ru + 4096], reply_markup=greet_kb9_ru.as_markup(resize_keyboard = True))
             else:
-                await call.message.answer(text=value_ru, reply_markup=greet_kb9_ru)
+                await call.message.answer(text=value_ru, reply_markup=greet_kb9_ru.as_markup(resize_keyboard = True))
     wb.close()
 
 
@@ -738,9 +720,9 @@ async def from_file(call: types.CallbackQuery):
             value_en = ws.cell(row=cell_en, column=2).value
             if len(value_en) > 4096:
                 for len_en in range(0, len(value_en), 4096):
-                    await call.message.answer(text=value_en[len_en:len_en + 4096], reply_markup=greet_kb_5_en)
+                    await call.message.answer(text=value_en[len_en:len_en + 4096], reply_markup=greet_kb_5_en.as_markup(resize_keyboard = True))
             else:
-                await call.message.answer(text=value_en, reply_markup=greet_kb_5_en)
+                await call.message.answer(text=value_en, reply_markup=greet_kb_5_en.as_markup(resize_keyboard = True))
     wb.close()
 
     for cell_en in range(59, 67):
@@ -749,20 +731,20 @@ async def from_file(call: types.CallbackQuery):
             value_en = ws.cell(row=cell_en, column=2).value
             if len(value_en) > 4096:
                 for len_en in range(0, len(value_en), 4096):
-                    await call.message.answer(text=value_en[len_en:len_en + 4096], reply_markup=greet_kb_6_en)
+                    await call.message.answer(text=value_en[len_en:len_en + 4096], reply_markup=greet_kb_6_en.as_markup(resize_keyboard = True))
             else:
-                await call.message.answer(text=value_en, reply_markup=greet_kb_6_en)
+                await call.message.answer(text=value_en, reply_markup=greet_kb_6_en.as_markup(resize_keyboard = True))
     wb.close()
 
-    for cell_en in range(68, 70):
+    for cell_en in range(68, 60):
         key_value_en = ws.cell(row=cell_en, column=1).value
         if key_value_en == look_for:
             value_en = ws.cell(row=cell_en, column=2).value
             if len(value_en) > 4096:
                 for len_en in range(0, len(value_en), 4096):
-                    await call.message.answer(text=value_en[len_en:len_en + 4096], reply_markup=greet_kb_7_en)
+                    await call.message.answer(text=value_en[len_en:len_en + 4096], reply_markup=greet_kb_7_en.as_markup(resize_keyboard = True))
             else:
-                await call.message.answer(text=value_en, reply_markup=greet_kb_7_en)
+                await call.message.answer(text=value_en, reply_markup=greet_kb_7_en.as_markup(resize_keyboard = True))
     wb.close()
 
     for cell_en in range(70, 77):
@@ -771,9 +753,9 @@ async def from_file(call: types.CallbackQuery):
             value_en = ws.cell(row=cell_en, column=2).value
             if len(value_en) > 4096:
                 for len_en in range(0, len(value_en), 4096):
-                    await call.message.answer(text=value_en[len_en:len_en + 4096], reply_markup=greet_kb_8_en)
+                    await call.message.answer(text=value_en[len_en:len_en + 4096], reply_markup=greet_kb_8_en.as_markup(resize_keyboard = True))
             else:
-                await call.message.answer(text=value_en, reply_markup=greet_kb_8_en)
+                await call.message.answer(text=value_en, reply_markup=greet_kb_8_en.as_markup(resize_keyboard = True))
     wb.close()
 
     for cell_en in range(77, 94):
@@ -782,9 +764,9 @@ async def from_file(call: types.CallbackQuery):
             value_en = ws.cell(row=cell_en, column=2).value
             if len(value_en) > 4096:
                 for len_en in range(0, len(value_en), 4096):
-                    await call.message.answer(text=value_en[len_en:len_en + 4096], reply_markup=greet_kb_9_en)
+                    await call.message.answer(text=value_en[len_en:len_en + 4096], reply_markup=greet_kb_9_en.as_markup(resize_keyboard = True))
             else:
-                await call.message.answer(text=value_en, reply_markup=greet_kb_9_en)
+                await call.message.answer(text=value_en, reply_markup=greet_kb_9_en.as_markup(resize_keyboard = True))
     wb.close()
 
 async def main():
