@@ -90,15 +90,15 @@ btn_d_t_p_i_ru = types.KeyboardButton(text='Документы для внесе
 inline_btn_1_2_3_49_50_51_ru = []
 inline_btn_1_2_3_49_50_51_ru.append([InlineKeyboardButton(text='Прейскурант услуг Эмитентам', callback_data='btn1_ru')])
 inline_btn_1_2_3_49_50_51_ru.append(
-    [InlineKeyboardButton(text='Прейскурант услуг зарегистрированным лицам', callback_data='btn2_ru')])
+    [InlineKeyboardButton(text='Прейскурант услуг акционерам', callback_data='btn2_ru')])
 inline_btn_1_2_3_49_50_51_ru.append(
-    [InlineKeyboardButton(text='Прейскурант доп.услуг зарегистрированным лицам', callback_data='btn3_ru')])
+    [InlineKeyboardButton(text='Прейскурант доп.услуг акционерам', callback_data='btn3_ru')])
 inline_btn_1_2_3_49_50_51_ru.append(
     [InlineKeyboardButton(text='Прейскурант услуг МКПАО «Алсиб»', callback_data='btn53_ru')])
 inline_btn_1_2_3_49_50_51_ru.append(
-    [InlineKeyboardButton(text='Прейскурант услуг зарегистрированным лицам МКПАО «Алсиб»', callback_data='btn54_ru')])
+    [InlineKeyboardButton(text='Прейскурант услуг акционерам МКПАО «Алсиб»', callback_data='btn54_ru')])
 inline_btn_1_2_3_49_50_51_ru.append([InlineKeyboardButton(
-    text='Прейскурант доп.услуг зарегистрированным лицам МКПАО «Алсиб»', callback_data='btn55_ru')])
+    text='Прейскурант доп.услуг акционерам МКПАО «Алсиб»', callback_data='btn55_ru')])
 inline_kb_full_ru = types.InlineKeyboardMarkup(inline_keyboard=inline_btn_1_2_3_49_50_51_ru)
 
 inline_btn_4_5_6_7_8_9_10_11_12_13_14_15_ru = []
@@ -111,7 +111,7 @@ inline_btn_4_5_6_7_8_9_10_11_12_13_14_15_ru.append(
 inline_btn_4_5_6_7_8_9_10_11_12_13_14_15_ru.append(
     [InlineKeyboardButton(text='Заявление-анкета нотариуса', callback_data='btn7_ru')])
 inline_btn_4_5_6_7_8_9_10_11_12_13_14_15_ru.append([InlineKeyboardButton(
-    text='Заявление-анкета органа государственной власти (органа местного самоуправления)', callback_data='btn8_ru')])
+    text='Заявление-анкета органа государственной власти', callback_data='btn8_ru')])
 inline_btn_4_5_6_7_8_9_10_11_12_13_14_15_ru.append(
     [InlineKeyboardButton(text='Заявление-анкета доверительного управляющего', callback_data='btn9_ru')])
 inline_btn_4_5_6_7_8_9_10_11_12_13_14_15_ru.append(
@@ -121,7 +121,7 @@ inline_btn_4_5_6_7_8_9_10_11_12_13_14_15_ru.append(
 inline_btn_4_5_6_7_8_9_10_11_12_13_14_15_ru.append(
     [InlineKeyboardButton(text='Заявление-анкета. Цифровые финансовые активы', callback_data='btn12_ru')])
 inline_btn_4_5_6_7_8_9_10_11_12_13_14_15_ru.append([InlineKeyboardButton(
-    text='Заявление-анкета иностранной структуры без образования юридического лица', callback_data='btn13_ru')])
+    text='Заявление-анкета иностранной структуры без образования ЮЛ', callback_data='btn13_ru')])
 inline_btn_4_5_6_7_8_9_10_11_12_13_14_15_ru.append(
     [InlineKeyboardButton(text='Заявление-анкета залогодержателя (физическое лицо)', callback_data='btn14_ru')])
 inline_btn_4_5_6_7_8_9_10_11_12_13_14_15_ru.append(
@@ -155,58 +155,68 @@ inline_btn_24_25_ru.append([InlineKeyboardButton(
     callback_data='btn25_ru')])
 inline_kb_full4_ru = InlineKeyboardMarkup(inline_keyboard=inline_btn_24_25_ru)
 
-inline_btn_26_27_28_29_30_31_ru = []
-inline_btn_26_27_28_29_30_31_ru.append(
-    [InlineKeyboardButton(text='Документы для физического лица', callback_data='btn26_ru')])
-inline_btn_26_27_28_29_30_31_ru.append([InlineKeyboardButton(text='Документы для нотариуса', callback_data='btn27_ru')])
-inline_btn_26_27_28_29_30_31_ru.append(
-    [InlineKeyboardButton(text='Документы ЮЛ, являющемуся резидентом РФ', callback_data='btn28_ru')])
-inline_btn_26_27_28_29_30_31_ru.append([InlineKeyboardButton(
-    text='Документы для органа государственной власти (органа местного самоуправления)', callback_data='btn29_ru')])
-inline_btn_26_27_28_29_30_31_ru.append(
-    [InlineKeyboardButton(text='Документы для ЮЛ-нерезидента', callback_data='btn30_ru')])
-inline_btn_26_27_28_29_30_31_ru.append(
-    [InlineKeyboardButton(text='Документы для открытия казначейского ЛС эмитенту', callback_data='btn31_ru')])
-inline_kb_full5_ru = InlineKeyboardMarkup(inline_keyboard=inline_btn_26_27_28_29_30_31_ru)
+inline_btn_26_27_28_29_30_31_32_33_34_35_ru = []
+inline_btn_26_27_28_29_30_31_32_33_34_35_ru.append([InlineKeyboardButton(text='Для физического лица',
+                                                                         callback_data='btn26_ru')])
+inline_btn_26_27_28_29_30_31_32_33_34_35_ru.append([InlineKeyboardButton(text='Для нотариуса',
+                                                                         callback_data='btn27_ru')])
+inline_btn_26_27_28_29_30_31_32_33_34_35_ru.append([InlineKeyboardButton(text='Для ЮЛ, являющемуся резидентом РФ',
+                                                                         callback_data='btn28_ru')])
+inline_btn_26_27_28_29_30_31_32_33_34_35_ru.append([InlineKeyboardButton(text='Для органа государственной власти'
+                                                                         , callback_data='btn29_ru')])
+inline_btn_26_27_28_29_30_31_32_33_34_35_ru.append([InlineKeyboardButton(text='Для эскроу-агента',
+                                                                         callback_data='btn30_ru')])
+inline_btn_26_27_28_29_30_31_32_33_34_35_ru.append([InlineKeyboardButton(text='Для доверительного управляющего',
+                                                                         callback_data='btn31_ru')])
+inline_btn_26_27_28_29_30_31_32_33_34_35_ru.append([InlineKeyboardButton(text='Для инвестиционного товарищества',
+                                                                         callback_data='btn32_ru')])
+inline_btn_26_27_28_29_30_31_32_33_34_35_ru.append([InlineKeyboardButton(text='Для ЮЛ-нерезидента',
+                                                                         callback_data='btn33_ru')])
+inline_btn_26_27_28_29_30_31_32_33_34_35_ru.append([InlineKeyboardButton(text='Для иностранной структуры без образования ЮЛ',
+                                                                         callback_data='btn34_ru')])
+inline_btn_26_27_28_29_30_31_32_33_34_35_ru.append([InlineKeyboardButton(text='Для открытия казначейского ЛС эмитенту',
+                                                                         callback_data='btn35_ru')])
+inline_kb_full5_ru = InlineKeyboardMarkup(inline_keyboard=inline_btn_26_27_28_29_30_31_32_33_34_35_ru)
 
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru = []
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append(
-    [InlineKeyboardButton(text='Документы для физического лица', callback_data='btn32_ru')])
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append(
-    [InlineKeyboardButton(text='Документы для юридического лица', callback_data='btn33_ru')])
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append(
-    [InlineKeyboardButton(text='Документы для передачи ЦБ при совершении сделки', callback_data='btn34_ru')])
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append(
-    [InlineKeyboardButton(text='Документы для передачи ЦБ при наследовании', callback_data='btn35_ru')])
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append(
-    [InlineKeyboardButton(text='Документы для исполнения судебных актов', callback_data='btn36_ru')])
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append(
-    [InlineKeyboardButton(text='Документы для передачи ЦБ при реорганизации', callback_data='btn37_ru')])
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append(
-    [InlineKeyboardButton(text='Документы для передачи ЦБ при ликвидации ЮЛ', callback_data='btn38_ru')])
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append(
-    [InlineKeyboardButton(text='Документы для передачи ЦБ при приватизации', callback_data='btn39_ru')])
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append([InlineKeyboardButton(
-    text='Для внесения записи о фиксации/прекращении права залога (последующего залога) ЦБ', callback_data='btn40_ru')])
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append([InlineKeyboardButton(
-    text='Для внесения записи о факте фиксации ограничения операций с ЦБ по их полной оплате',
-    callback_data='btn41_ru')])
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append([InlineKeyboardButton(
-    text='Для внесения записи о фиксации/снятии факта ограничения операций с ЦБ по ЛС ЗЛ', callback_data='btn42_ru')])
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append(
-    [InlineKeyboardButton(text='Для внесения записи о зачислении/списании ЦБ со счета НД', callback_data='btn43_ru')])
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append(
-    [InlineKeyboardButton(text='Для зачисления на ЛС НД заложенных ЦБ', callback_data='btn44_ru')])
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append(
-    [InlineKeyboardButton(text='Особенности проведения операций по ЛС ДУ', callback_data='btn45_ru')])
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append(
-    [InlineKeyboardButton(text='Особенности проведения операций по депозитному ЛС', callback_data='btn46_ru')])
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append(
-    [InlineKeyboardButton(text='Объединение ЛС в реестре', callback_data='btn47_ru')])
-inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru.append(
-    [InlineKeyboardButton(text='Закрытие ЛС', callback_data='btn48_ru')])
+
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru = []
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru.append([InlineKeyboardButton(text='Для физического лица',
+                                                                                              callback_data='btn36_ru')])
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru.append([InlineKeyboardButton(text='Для юридического лица',
+                                                                                              callback_data='btn37_ru')])
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru.append([InlineKeyboardButton(text='Для передачи ЦБ при совершении сделки',
+                                                                                              callback_data='btn38_ru')])
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru.append([InlineKeyboardButton(text='Для передачи ЦБ при наследовании',
+                                                                                              callback_data='btn39_ru')])
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru.append([InlineKeyboardButton(text='Для исполнения судебных актов',
+                                                                                              callback_data='btn40_ru')])
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru.append([InlineKeyboardButton(text='Для передачи ЦБ при реорганизации',
+                                                                                              callback_data='btn41_ru')])
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru.append([InlineKeyboardButton(text='Для передачи ЦБ при ликвидации ЮЛ',
+                                                                                              callback_data='btn42_ru')])
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru.append([InlineKeyboardButton(text='Для передачи ЦБ при приватизации',
+                                                                                              callback_data='btn43_ru')])
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru.append([InlineKeyboardButton(text='Для внесения записи о фиксации/прекращении права залога (последующего залога) ЦБ',
+                                                                                              callback_data='btn44_ru')])
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru.append([InlineKeyboardButton(text='Для внесения записи о факте фиксации ограничения операций с ЦБ по их полной оплате',
+                                                                                              callback_data='btn45_ru')])
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru.append([InlineKeyboardButton(text='Для внесения записи о фиксации/снятии факта ограничения операций с ЦБ по ЛС ЗЛ',
+                                                                                              callback_data='btn46_ru')])
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru.append([InlineKeyboardButton(text='Для внесения записи о зачислении/списании ЦБ со счета НД',
+                                                                                              callback_data='btn47_ru')])
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru.append([InlineKeyboardButton(text='Для зачисления на ЛС НД заложенных ЦБ',
+                                                                                              callback_data='btn48_ru')])
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru.append([InlineKeyboardButton(text='Особенности проведения операций по ЛС ДУ',
+                                                                                              callback_data='btn49_ru')])
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru.append([InlineKeyboardButton(text='Особенности проведения операций по депозитному ЛС',
+                                                                                              callback_data='btn50_ru')])
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru.append([InlineKeyboardButton(text='Объединение ЛС в реестре',
+                                                                                              callback_data='btn51_ru')])
+inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru.append([InlineKeyboardButton(text='Закрытие ЛС',
+                                                                                              callback_data='btn52_ru')])
 inline_kb_full6_ru = InlineKeyboardMarkup(
-    inline_keyboard=inline_btn_32_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_ru)
+    inline_keyboard=inline_btn_36_37_38_39_40_41_42_43_44_45_46_47_48_49_50_51_52_ru)
+
 
 greet_kb = ReplyKeyboardBuilder()
 greet_kb.row(btn_ru, width=1)
@@ -279,105 +289,113 @@ btn_d_o_a_en = types.KeyboardButton(text='Procedure for submitting documents to 
 btn_d_t_p_i_en = types.KeyboardButton(
     text='Procedure for submitting documents for a transaction and for providing information')
 
-inline_btn_1_2_3_4_5_6_7_8_en = []
-inline_btn_1_2_3_4_5_6_7_8_en.append([InlineKeyboardButton(text='Issuer Application Form', callback_data='btn1_en')])
-inline_btn_1_2_3_4_5_6_7_8_en.append(
+inline_btn_1_2_3_4_5_6_7_8_9_10_11_12_en = []
+inline_btn_1_2_3_4_5_6_7_8_9_10_11_12_en.append([InlineKeyboardButton(text='Issuer Application Form', callback_data='btn1_en')])
+inline_btn_1_2_3_4_5_6_7_8_9_10_11_12_en.append(
     [InlineKeyboardButton(text='Individual Application Form', callback_data='btn2_en')])
-inline_btn_1_2_3_4_5_6_7_8_en.append(
+inline_btn_1_2_3_4_5_6_7_8_9_10_11_12_en.append(
     [InlineKeyboardButton(text='Legal Entity Application Form', callback_data='btn3_en')])
-inline_btn_1_2_3_4_5_6_7_8_en.append([InlineKeyboardButton(text='Notary Application Form', callback_data='btn4_en')])
-inline_btn_1_2_3_4_5_6_7_8_en.append(
-    [InlineKeyboardButton(text='Authorised Body Application Form', callback_data='btn5_en')])
-inline_btn_1_2_3_4_5_6_7_8_en.append([InlineKeyboardButton(text='Trustee Application Form', callback_data='btn6_en')])
-inline_btn_1_2_3_4_5_6_7_8_en.append(
-    [InlineKeyboardButton(text='Pledgee(individual) Application Form', callback_data='btn7_en')])
-inline_btn_1_2_3_4_5_6_7_8_en.append(
-    [InlineKeyboardButton(text='Pledgee(legal entity) Application Form', callback_data='btn8_en')])
-inline_kb_full_en = InlineKeyboardMarkup(inline_keyboard=inline_btn_1_2_3_4_5_6_7_8_en)
+inline_btn_1_2_3_4_5_6_7_8_9_10_11_12_en.append([InlineKeyboardButton(text='Notary Application Form', callback_data='btn4_en')])
+inline_btn_1_2_3_4_5_6_7_8_9_10_11_12_en.append([InlineKeyboardButton(text= 'Application form of a public (local) authority', callback_data='btn5_en')])
+inline_btn_1_2_3_4_5_6_7_8_9_10_11_12_en.append([InlineKeyboardButton(text='Trustee Application Form', callback_data='btn6_en')])
+inline_btn_1_2_3_4_5_6_7_8_9_10_11_12_en.append([InlineKeyboardButton(text='Escrow Agent Application Form', callback_data='btn7_en')])
+inline_btn_1_2_3_4_5_6_7_8_9_10_11_12_en.append([InlineKeyboardButton(text='Investment Partnership Application Form', callback_data='btn8_en')])
+inline_btn_1_2_3_4_5_6_7_8_9_10_11_12_en.append([InlineKeyboardButton(text='Digital financial assets Application Form', callback_data='btn9_en')])
+inline_btn_1_2_3_4_5_6_7_8_9_10_11_12_en.append([InlineKeyboardButton(text='Application Form of a foreign unincorporated undertaking', callback_data='btn10_en')])
+inline_btn_1_2_3_4_5_6_7_8_9_10_11_12_en.append([InlineKeyboardButton(text='Pledgee(individual) Application Form', callback_data='btn11_en')])
+inline_btn_1_2_3_4_5_6_7_8_9_10_11_12_en.append([InlineKeyboardButton(text='Pledgee(legal entity) Application Form', callback_data='btn12_en')])
+inline_kb_full_en = InlineKeyboardMarkup(inline_keyboard=inline_btn_1_2_3_4_5_6_7_8_9_10_11_12_en)
 
-inline_btn_9_10_11_12_13_14_15_16_en = []
-inline_btn_9_10_11_12_13_14_15_16_en.append([InlineKeyboardButton(text='Transaction Order', callback_data='btn9_en')])
-inline_btn_9_10_11_12_13_14_15_16_en.append([InlineKeyboardButton(text='Pledge Order', callback_data='btn10_en')])
-inline_btn_9_10_11_12_13_14_15_16_en.append([InlineKeyboardButton(
-    text='Order to amend the pledged securities and the terms and conditions of the pledge', callback_data='btn11_en')])
-inline_btn_9_10_11_12_13_14_15_16_en.append(
-    [InlineKeyboardButton(text='Order to assign pledge rights', callback_data='btn12_en')])
-inline_btn_9_10_11_12_13_14_15_16_en.append(
-    [InlineKeyboardButton(text='Order to terminate pledge', callback_data='btn13_en')])
-inline_btn_9_10_11_12_13_14_15_16_en.append(
-    [InlineKeyboardButton(text='Order to provide information from the registry', callback_data='btn14_en')])
-inline_btn_9_10_11_12_13_14_15_16_en.append(
-    [InlineKeyboardButton(text='Order to lift restrictions on transactions with securities', callback_data='btn15_en')])
-inline_btn_9_10_11_12_13_14_15_16_en.append([InlineKeyboardButton(
-    text="Owner's order to transfer securities to the deposit account", callback_data='btn16_en')])
-inline_kb_full_2_en = InlineKeyboardMarkup(inline_keyboard=inline_btn_9_10_11_12_13_14_15_16_en)
+inline_btn_13_14_15_16_17_18_19_20_en = []
+inline_btn_13_14_15_16_17_18_19_20_en.append([InlineKeyboardButton(text='Transaction Order', callback_data='btn13_en')])
+inline_btn_13_14_15_16_17_18_19_20_en.append([InlineKeyboardButton(text='Pledge Order', callback_data='btn14_en')])
+inline_btn_13_14_15_16_17_18_19_20_en.append([InlineKeyboardButton(
+    text='Order to amend the pledged securities and the terms and conditions of the pledge', callback_data='btn15_en')])
+inline_btn_13_14_15_16_17_18_19_20_en.append(
+    [InlineKeyboardButton(text='Order to assign pledge rights', callback_data='btn16_en')])
+inline_btn_13_14_15_16_17_18_19_20_en.append(
+    [InlineKeyboardButton(text='Order to terminate pledge', callback_data='btn17_en')])
+inline_btn_13_14_15_16_17_18_19_20_en.append(
+    [InlineKeyboardButton(text='Order to provide information from the registry', callback_data='btn18_en')])
+inline_btn_13_14_15_16_17_18_19_20_en.append(
+    [InlineKeyboardButton(text='Order to lift restrictions on transactions with securities', callback_data='btn19_en')])
+inline_btn_13_14_15_16_17_18_19_20_en.append([InlineKeyboardButton(
+    text="Owner's order to transfer securities to the deposit account", callback_data='btn20_en')])
+inline_kb_full_2_en = InlineKeyboardMarkup(inline_keyboard=inline_btn_13_14_15_16_17_18_19_20_en)
 
-inline_btn_17_18_en = []
-inline_btn_17_18_en.append([InlineKeyboardButton(text='Procedure for submitting documents to open a personal account',
-                                                 callback_data='btn17_en')])
-inline_btn_17_18_en.append([InlineKeyboardButton(
+inline_btn_21_22_en = []
+inline_btn_21_22_en.append([InlineKeyboardButton(text='Procedure for submitting documents to open a personal account',
+                                                 callback_data='btn21_en')])
+inline_btn_21_22_en.append([InlineKeyboardButton(
     text='Procedure for submitting documents for a transaction and for providing information',
-    callback_data='btn18_en')])
-inline_kb_full_3_en = InlineKeyboardMarkup(inline_keyboard=inline_btn_17_18_en)
+    callback_data='btn22_en')])
+inline_kb_full_3_en = InlineKeyboardMarkup(inline_keyboard=inline_btn_21_22_en)
 
-inline_btn_19_20_21_22_23_24_25_en = []
-inline_btn_19_20_21_22_23_24_25_en.append(
-    [InlineKeyboardButton(text='Documents for an individual', callback_data='btn19_en')])
-inline_btn_19_20_21_22_23_24_25_en.append(
-    [InlineKeyboardButton(text='Documents for the notary', callback_data='btn20_en')])
-inline_btn_19_20_21_22_23_24_25_en.append([InlineKeyboardButton(
-    text='Documents of a legal entity being a resident of the Russian Federation', callback_data='btn21_en')])
-inline_btn_19_20_21_22_23_24_25_en.append(
-    [InlineKeyboardButton(text='Documents for the Authorised Body', callback_data='btn22_en')])
-inline_btn_19_20_21_22_23_24_25_en.append(
-    [InlineKeyboardButton(text='Documents for non-resident legal entity', callback_data='btn23_en')])
-inline_btn_19_20_21_22_23_24_25_en.append(
-    [InlineKeyboardButton(text='Documents to open a treasury account for the issuer', callback_data='btn24_en')])
-inline_btn_19_20_21_22_23_24_25_en.append([InlineKeyboardButton(
-    text='Documents to open a personal account for common hared ownership', callback_data='btn25_en')])
-inline_kb_full_4_en = InlineKeyboardMarkup(inline_keyboard=inline_btn_19_20_21_22_23_24_25_en)
+inline_btn_23_24_25_26_27_28_29_30_31_32_en = []
+inline_btn_23_24_25_26_27_28_29_30_31_32_en.append(
+    [InlineKeyboardButton(text='For an individual', callback_data='btn23_en')])
+inline_btn_23_24_25_26_27_28_29_30_31_32_en.append(
+    [InlineKeyboardButton(text='For the notary', callback_data='btn24_en')])
+inline_btn_23_24_25_26_27_28_29_30_31_32_en.append([InlineKeyboardButton(
+    text='Documents of a legal entity being a resident of the Russian Federation', callback_data='btn25_en')])
+inline_btn_23_24_25_26_27_28_29_30_31_32_en.append(
+    [InlineKeyboardButton(text='For public (local) authority', callback_data='btn26_en')])
+inline_btn_23_24_25_26_27_28_29_30_31_32_en.append(
+    [InlineKeyboardButton(text='For escrow agent', callback_data='btn27_en')])
+inline_btn_23_24_25_26_27_28_29_30_31_32_en.append(
+    [InlineKeyboardButton(text='For trustee', callback_data='btn28_en')])
+inline_btn_23_24_25_26_27_28_29_30_31_32_en.append(
+    [InlineKeyboardButton(text='For investment partnership', callback_data='btn29_en')])
 
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en = []
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append(
-    [InlineKeyboardButton(text='Documents for an individual', callback_data='btn26_en')])
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append(
-    [InlineKeyboardButton(text='Documents for a legal entity', callback_data='btn27_en')])
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append([InlineKeyboardButton(
-    text='Documents to transfer securities upon execution of a transaction', callback_data='btn28_en')])
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append(
-    [InlineKeyboardButton(text='Documents to transfer securities upon inheritance', callback_data='btn29_en')])
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append(
-    [InlineKeyboardButton(text='Documents to enforce court orders', callback_data='btn30_en')])
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append(
-    [InlineKeyboardButton(text='Documents to transfer securities upon reorganisation', callback_data='btn31_en')])
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append([InlineKeyboardButton(
-    text='Documents to transfer securities upon liquidation of a legal entity', callback_data='btn32_en')])
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append(
-    [InlineKeyboardButton(text='Documents to transfer securities upon privatisation', callback_data='btn33_en')])
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append([InlineKeyboardButton(
+inline_btn_23_24_25_26_27_28_29_30_31_32_en.append(
+    [InlineKeyboardButton(text='For non-resident legal entity', callback_data='btn30_en')])
+inline_btn_23_24_25_26_27_28_29_30_31_32_en.append(
+    [InlineKeyboardButton(text='For unincorporated undertaking', callback_data='btn31_en')])
+inline_btn_23_24_25_26_27_28_29_30_31_32_en.append(
+    [InlineKeyboardButton(text='Documents to open a treasury account for the issuer', callback_data='btn32_en')])
+inline_kb_full_4_en = InlineKeyboardMarkup(inline_keyboard=inline_btn_23_24_25_26_27_28_29_30_31_32_en)
+
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en = []
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en.append(
+    [InlineKeyboardButton(text='For an individual', callback_data='btn33_en')])
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en.append(
+    [InlineKeyboardButton(text='For a legal entity', callback_data='btn34_en')])
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en.append([InlineKeyboardButton(
+    text='Documents to transfer securities upon execution of a transaction', callback_data='btn35_en')])
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en.append(
+    [InlineKeyboardButton(text='Documents to transfer securities upon inheritance', callback_data='btn36_en')])
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en.append(
+    [InlineKeyboardButton(text='Documents to enforce court orders', callback_data='btn37_en')])
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en.append(
+    [InlineKeyboardButton(text='Documents to transfer securities upon reorganisation', callback_data='btn38_en')])
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en.append([InlineKeyboardButton(
+    text='Documents to transfer securities upon liquidation of a legal entity', callback_data='btn39_en')])
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en.append(
+    [InlineKeyboardButton(text='Documents to transfer securities upon privatisation', callback_data='btn40_en')])
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en.append([InlineKeyboardButton(
     text='In order to make an entry on the recording / termination of a pledge (subsequent pledge) of securities',
-    callback_data='btn34_en')])
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append([InlineKeyboardButton(
+    callback_data='btn41_en')])
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en.append([InlineKeyboardButton(
     text='To make an entry on committing restrictions on securities transactions to pay them in full',
-    callback_data='btn35_en')])
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append([InlineKeyboardButton(
+    callback_data='btn42_en')])
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en.append([InlineKeyboardButton(
     text='To make an entry on committing / removing restrictions on securities transactions on the personal account of a registered person',
-    callback_data='btn36_en')])
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append([InlineKeyboardButton(
+    callback_data='btn43_en')])
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en.append([InlineKeyboardButton(
     text='To make an entry on deposition / withdrawal of securities to / from an account of a nominee holder',
-    callback_data='btn37_en')])
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append([InlineKeyboardButton(
-    text='To deposit pledged securities to an account of a nominee holder', callback_data='btn38_en')])
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append([InlineKeyboardButton(
-    text="Specifics of transactions in the trustee's personal account", callback_data='btn39_en')])
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append(
-    [InlineKeyboardButton(text='Specifics of deposit personal account transactions', callback_data='btn40_en')])
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append(
-    [InlineKeyboardButton(text='Pooling of personal accounts in the register', callback_data='btn41_en')])
-inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en.append(
-    [InlineKeyboardButton(text='Closure of a personal account', callback_data='btn42_en')])
+    callback_data='btn44_en')])
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en.append([InlineKeyboardButton(
+    text='To deposit pledged securities to an account of a nominee holder', callback_data='btn45_en')])
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en.append([InlineKeyboardButton(
+    text="Specifics of transactions in the trustee's personal account", callback_data='btn46_en')])
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en.append(
+    [InlineKeyboardButton(text='Specifics of deposit personal account transactions', callback_data='btn47_en')])
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en.append(
+    [InlineKeyboardButton(text='Pooling of personal accounts in the register', callback_data='btn48_en')])
+inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en.append(
+    [InlineKeyboardButton(text='Closure of a personal account', callback_data='btn49_en')])
 inline_kb_full_5_en = InlineKeyboardMarkup(
-    inline_keyboard=inline_btn_26_27_28_29_30_31_32_33_34_35_36_37_38_39_40_41_42_en)
+    inline_keyboard=inline_btn_33_34_35_36_37_38_39_40_41_42_43_44_45_46_47_48_49_en)
 
 greet_kb_en = ReplyKeyboardBuilder()
 greet_kb_en.row(btn_p_f_s_en, width=1)
@@ -742,7 +760,7 @@ async def from_file(message: types.Message):
             else:
                 await message.answer(text=value_ru, reply_markup=inline_kb_full4_ru)
 
-    for cell_en in range(49, 50):
+    for cell_en in range(53, 54):
         key_value_en = ws.cell(row=cell_en, column=1).value
         if key_value_en == look_for:
             value_en = ws.cell(row=cell_en, column=2).value
@@ -758,7 +776,7 @@ async def from_file(message: types.Message):
                     'If you have not found the Application form you need, then write to us by e - mail info @ crc - reg.com',
                     reply_markup=inline_kb_full_en)
 
-    for cell_en in range(58, 59):
+    for cell_en in range(66, 67):
         key_value_en = ws.cell(row=cell_en, column=1).value
         if key_value_en == look_for:
             value_en = ws.cell(row=cell_en, column=2).value
@@ -774,7 +792,7 @@ async def from_file(message: types.Message):
                     'If you have not found the Order you need, then write to us by e-mail info@crc-reg.com',
                     reply_markup=inline_kb_full_2_en)
 
-    for cell_en in range(67, 68):
+    for cell_en in range(75, 76):
         key_value_en = ws.cell(row=cell_en, column=1).value
         if key_value_en == look_for:
             value_en = ws.cell(row=cell_en, column=2).value
@@ -829,7 +847,7 @@ async def from_file(call: types.CallbackQuery):
                 await call.message.answer(text=value_ru, reply_markup=greet_kb7_ru.as_markup(resize_keyboard=True))
     wb.close()
 
-    for cell_ru in range(26, 32):
+    for cell_ru in range(26, 36):
         key_value_ru = ws.cell(row=cell_ru, column=1).value
         if key_value_ru == look_for:
             value_ru = ws.cell(row=cell_ru, column=2).value
@@ -841,7 +859,7 @@ async def from_file(call: types.CallbackQuery):
                 await call.message.answer(text=value_ru, reply_markup=greet_kb8_ru.as_markup(resize_keyboard=True))
     wb.close()
 
-    for cell_ru in range(32, 49):
+    for cell_ru in range(36, 53):
         key_value_ru = ws.cell(row=cell_ru, column=1).value
         if key_value_ru == look_for:
             value_ru = ws.cell(row=cell_ru, column=2).value
@@ -853,7 +871,7 @@ async def from_file(call: types.CallbackQuery):
                 await call.message.answer(text=value_ru, reply_markup=greet_kb9_ru.as_markup(resize_keyboard=True))
     wb.close()
 
-    for cell_en in range(50, 58):
+    for cell_en in range(54, 66):
         key_value_en = ws.cell(row=cell_en, column=1).value
         if key_value_en == look_for:
             value_en = ws.cell(row=cell_en, column=2).value
@@ -865,7 +883,7 @@ async def from_file(call: types.CallbackQuery):
                 await call.message.answer(text=value_en, reply_markup=greet_kb_5_en.as_markup(resize_keyboard=True))
     wb.close()
 
-    for cell_en in range(59, 67):
+    for cell_en in range(67, 75):
         key_value_en = ws.cell(row=cell_en, column=1).value
         if key_value_en == look_for:
             value_en = ws.cell(row=cell_en, column=2).value
@@ -877,7 +895,7 @@ async def from_file(call: types.CallbackQuery):
                 await call.message.answer(text=value_en, reply_markup=greet_kb_6_en.as_markup(resize_keyboard=True))
     wb.close()
 
-    for cell_en in range(68, 60):
+    for cell_en in range(76, 78):
         key_value_en = ws.cell(row=cell_en, column=1).value
         if key_value_en == look_for:
             value_en = ws.cell(row=cell_en, column=2).value
@@ -889,7 +907,7 @@ async def from_file(call: types.CallbackQuery):
                 await call.message.answer(text=value_en, reply_markup=greet_kb_7_en.as_markup(resize_keyboard=True))
     wb.close()
 
-    for cell_en in range(70, 77):
+    for cell_en in range(78, 88):
         key_value_en = ws.cell(row=cell_en, column=1).value
         if key_value_en == look_for:
             value_en = ws.cell(row=cell_en, column=2).value
@@ -901,7 +919,7 @@ async def from_file(call: types.CallbackQuery):
                 await call.message.answer(text=value_en, reply_markup=greet_kb_8_en.as_markup(resize_keyboard=True))
     wb.close()
 
-    for cell_en in range(77, 94):
+    for cell_en in range(88, 105):
         key_value_en = ws.cell(row=cell_en, column=1).value
         if key_value_en == look_for:
             value_en = ws.cell(row=cell_en, column=2).value
