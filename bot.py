@@ -700,7 +700,7 @@ async def p_s_t_p_en(message: types.Message):
         reply_markup=inline_kb_full_5_en)
 
 
-URL_CONTACTS_en = 'https://crc-reg.com/en/about/contacts/'
+URL_CONTACTS_en = 'https://crc-reg.com/en/contacts/'
 
 r_contact_en = requests.get(URL_CONTACTS_en)
 soup_contact_en = BeautifulSoup(r_contact_en.text, 'html.parser')
